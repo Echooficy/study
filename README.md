@@ -1,2 +1,2 @@
 # study
-Repositorio para realizar pruebas y estudios
+Esta version no esta en produccion y ademas se realizan pruebas de animaciones
