@@ -1,2 +1,2 @@
 # study
-Repositorio para realizar pruebas y estudios
+Repositorio para realizar pruebas y estudios xd
