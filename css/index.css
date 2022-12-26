@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*NavBar*/
+
+.navbar {
+    padding-top: 2% !important;
+    background-color:rgb(18,26,27,0.5) !important;
+    backdrop-filter: blur(5px) !important;
+}
+
+.navbar a {
+    display: flex;
+    color: white;
+}
+
+nav li,
+a {
+    color: white;
+    /* para darle color a los items */
+    text-decoration: none;
+    /* para quitar el subrayado */
+    font-size: 16px;
+    /* para darle tamaño a la fuente */
+    padding: 0 20px;
+    /* para agregar espacio a los lados de cada item */
+}
+
+/* Banner*/
+.banner {
+    display: flex;
+}
+
+body {
+    background-image: url('../img/background.jpg');
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+
+/*Banner*/
+.btn-verde {
+    background-color: rgba(5, 207, 111, 255);
+    color: rgba(1, 11, 13, 255);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15%;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 2%;
+    width: 30%;
+    border-radius: 5%;
+}
+
+.btn-negro {
+    background-color: rgba(1, 11, 13, 255);
+    color: rgba(97, 103, 107, 255);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15%;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 2%;
+    width: 30%;
+    border-radius: 5%;
+}
+
+.titulos {
+    color: rgba(222, 232, 234, 255);
+    display: block;
+    margin-top: 20%;
+}
+.titulos h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+.parrafos {
+    text-align: justify;
+    /* Justifica el texto */
+    color: rgb(190, 201, 182);
+    display: block;
+    margin-top: 10%;
+}
+
+.Contenido_1 {
+    width: 50%;
+    float: left;
+    backdrop-filter: blur(5px);
+}
+
+/*Seccion uno*/
+.seccion_1 {
+    margin-top: 5%;
+    backdrop-filter: blur(5px) !important;
+
+    background-color: rgb(18,26,27);
+    height: 100%;
+}
+
+.cartas {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cartas .card{
+    margin: 0.8%;
+}
+.card img{
+   
+    border-radius: 8%;
+}
+.card{
+    width: 33rem;
+    border: 0px !important;
+}
+.card a{
+    text-decoration: none;
+}
+.card{
+    background: rgb(0,0,0,0.0) !important;
+}
+
+/* Estilos para teléfonos móviles */
+@media (max-width: 767px) {
+
+    .Contenido_1 {
+        width: 100%;
+        backdrop-filter: blur(5px);
+    }
+
+    .botones {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-verde {
+
+        margin-right: 2%;
+    }
+
+    .cartas {
+        flex-direction: column;
+        align-items: center;
+      }
+    .cartas .card{
+        width: 18rem !important;
+        margin-top: 6%;
+    }
+
+
+}
