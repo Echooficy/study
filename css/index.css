@@ -34,7 +34,7 @@
 
 .navbar {
     padding-top: 2% !important;
-    background-color: rgb(18, 26, 27, 0.5) !important;
+    background-color: rgb(0, 0, 0) !important;
     backdrop-filter: blur(5px) !important;
 }
 
@@ -55,18 +55,29 @@ a {
     /* para agregar espacio a los lados de cada item */
 }
 
+.card-body {
+    color: white;
+}
+
+.container {
+    max-width: 90% !important;
+}
+
 /* Banner*/
 .banner {
+    background-image: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 1) 5%, rgba(5, 207, 111, 0) 100%), url('../img/background.jpg');
+    height: 100%;
+    /* establece el alto del banner */
+    width: 100%;
+    /* hace que el banner ocupe todo el ancho de la pantalla */
+    background-size: auto;
+    /* hace que la imagen se ajuste al tamaño del banner */
+    background-position: center;
+    /* centra la imagen en el banner */
     display: flex;
 }
-
-body {
-    background-image: url('../img/background.jpg');
-    background-size: auto;
-    background-repeat: no-repeat;
-}
-
 /*Banner*/
+
 .btn-verde {
     background-color: rgba(5, 207, 111, 255);
     color: rgba(1, 11, 13, 255);
@@ -96,7 +107,6 @@ body {
 .titulos {
     color: rgba(222, 232, 234, 255);
     display: block;
-    margin-top: 20%;
 }
 
 .titulos h1,
@@ -110,20 +120,21 @@ h3 {
     /* Justifica el texto */
     color: rgb(190, 201, 182);
     display: block;
-    margin-top: 10%;
 }
 
 .Contenido_1 {
+    padding-bottom: 5%;
+    padding-top: 5%;
     width: 50%;
+    height: 90%;
     float: left;
     backdrop-filter: blur(5px);
 }
 
 /*Seccion uno*/
 .seccion_1 {
-    margin-top: 5%;
     backdrop-filter: blur(5px) !important;
-    background-color: rgb(18, 26, 27);
+    background-color: rgb(11, 15, 15);
     height: 100%;
 }
 
@@ -220,20 +231,20 @@ h3 {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-  }
-  
+}
+
 .pie {
     background-color: rgba(5, 207, 111, 255);
     font-weight: bold;
 }
 
-.pie .container{
+.pie .container {
     margin-bottom: 2%;
 }
 
 .seccion_2 {
     backdrop-filter: blur(5px) !important;
-    background-color: rgb(18, 26, 27);
+    background-color: rgb(11, 15, 15);
     height: 100%;
 }
 
@@ -260,7 +271,7 @@ h3 {
 }
 
 .custom-shape-divider-top-1672151114 .shape-fill {
-    fill: rgb(18, 26, 27);
+    fill: rgb(11, 15, 15);
 }
 
 /* Estilos para teléfonos móviles */
