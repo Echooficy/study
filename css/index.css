@@ -30,7 +30,6 @@
     fill: rgba(5, 207, 111, 255);
 }
 
-
 /*NavBar*/
 
 .navbar {
@@ -55,16 +54,26 @@ a {
     padding: 0 20px;
     /* para agregar espacio a los lados de cada item */
 }
+.card-body{color: white;}
+.container{
+    max-width: 90% !important;
+}
 
 /* Banner*/
 .banner {
+    background-image: url('../img/background.jpg');
+    height: 100%; /* establece el alto del banner */
+    width: 100%; /* hace que el banner ocupe todo el ancho de la pantalla */
+    background-size: cover; /* hace que la imagen se ajuste al tamaño del banner */
+    background-position: center; /* centra la imagen en el banner */
     display: flex;
-}
+  }
+  
 
 body {
-    background-image: url('../img/background.jpg');
+   /* background-image: url('../img/background.jpg');
     background-size: auto;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 /*Banner*/
@@ -160,7 +169,6 @@ h3 {
     background: rgb(0, 0, 0, 0.0) !important;
 }
 
-
 .cartas .div_doble {
     flex: 1;
     margin: 0 10px;
@@ -174,8 +182,9 @@ h3 {
     padding: 2%;
 }
 
- .xl{
-    flex: 2 !important; /* establece el tamaño básico del elemento en 50% y su propiedad flex-grow en 2 */
+.xl {
+    flex: 2 !important;
+    /* establece el tamaño básico del elemento en 50% y su propiedad flex-grow en 2 */
 }
 
 .icono_tabla {
@@ -183,26 +192,85 @@ h3 {
     border-radius: 10%;
 }
 
-.div_doble .tabla{
-    color:white;
-
-    
-}
-.div_doble td{
-    border-bottom: 1px solid  rgba(5, 207, 111, 255);
+.div_doble .tabla {
+    color: white;
+    width: 100%;
 }
 
-.div_doble .td{
-    vertical-align: middle; 
+.div_doble td {
+    border-bottom: 1px solid rgba(5, 207, 111, 255);
+    padding: 0.5%;
+}
+
+.div_doble .td {
+    vertical-align: middle;
     text-align: right;
 
 }
 
-.div_doble .td_icono{
-    vertical-align: middle; 
-    padding:2%;
+.div_doble .td_icono {
+    vertical-align: middle;
+    padding: 2%;
     margin-top: 1%;
 
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(5, 207, 111, 255);
+}
+
+.footer>div {
+    text-align: center;
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  
+.pie {
+    background-color: rgba(5, 207, 111, 255);
+    font-weight: bold;
+}
+
+.pie .container{
+    margin-bottom: 2%;
+}
+
+.seccion_2 {
+    backdrop-filter: blur(5px) !important;
+    background-color: rgb(18, 26, 27);
+    height: 100%;
+}
+
+.seccion_2 h1 {
+    color: rgb(188, 222, 227);
+    padding-top: 3.33%;
+}
+
+.custom-shape-divider-top-1672151114 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1672151114 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 143px;
+}
+
+.custom-shape-divider-top-1672151114 .shape-fill {
+    fill: rgb(18, 26, 27);
 }
 
 /* Estilos para teléfonos móviles */
